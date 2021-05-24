@@ -1,19 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: white;
-  height: 100vh;
+  background-color: #c7c7c7;
 }
 
-body #container {
-  height: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+body main ul {
+  list-style-type: none;
+}
+
+body main ul a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+body main .home {
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #58c41a;
+  color: black;
+}
+
+body main .home:hover {
+  background-color: #dceb0f;
 }
 

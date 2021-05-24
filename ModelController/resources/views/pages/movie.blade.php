@@ -1,28 +1,28 @@
 @extends('layouts.main-layout')
-
 @section('content')
-    <div id="container">
-        <div class="movie">
-            <h1>
-                Movie
-            </h1>
-            <h2>
-                [{{ $movie -> id }}]
-                {{ $movie -> title }}
-            </h2>
-            <h2>
-                {{ $movie -> original_title }} 
-            </h2>
-            <p>
-                {{$movie -> nationality}}
-            </p>
-            <p>
-                {{$movie -> date}}
-            </p>
-
-            <a href="{{route('home')}}">
-                Movies List
-            </a>
-        </div>
+  <main>
+    <div>
+      <ul>
+        <li>
+          <h1>ID: {{ $movie -> id }}</h1>
+        </li>
+        <li>
+          <h1>Title: {{ $movie -> title }}</h1>
+        </li>
+        <li>
+          <h1>Original Title: {{ $movie -> original_title }}</h1>
+        </li>
+        <li>
+          <h1>Nationality: {{ $movie -> nationality }}</h1>
+        </li>
+        <li>
+          <h1>Date: {{ $movie -> date }}</h1>
+        </li>
+        <li>
+          <h1>Vote: {{ $movie -> vote }}</h1>
+        </li>
+      </ul>
     </div>
+    <a class="home" href="{{route('home')}}">List Movies</a>
+  </main>
 @endsection
